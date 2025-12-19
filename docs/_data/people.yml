@@ -1,0 +1,19 @@
+- groupname: "Principal Investigator"
+  member:
+  - name: "Yoonseung Kim"
+    position: "Assistant Professor"
+    link: "https://kim-yoonseung.github.io"
+- groupname: "Postdoctoral Researchers"
+  member:
+- groupname: "PhD Candidates"
+  member:
+  - name: "Jiyoon Yoon"
+    position: "PhD Student"
+    link: "jiyoon/"
+  - name: "Jiyoon2 Yoon"
+    position: "PhD Student"
+    link: "jiyoon2/"
+- groupname: "MS Candidates"
+  member:
+- groupname: "Undergraduates"
+  member:

@@ -1,0 +1,154 @@
+---
+title: Research
+layout: single
+---
+
+<style>
+  .wrap-image {
+    float: right;
+    width: 500px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 4px; */
+    padding: 5px;
+    background: #fff;
+  }
+
+  .topic-section {
+    overflow: hidden;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  @media (max-width: 600px) {
+    .wrap-image {
+      float: none;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  .image-row {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      margin: 24px 0;
+  }
+
+  .image-row img {
+      width: 50%;
+      height: auto;
+  }
+</style>
+
+<section id="philosophy">
+  <h2 class="archive__subtitle">Core Philosophy</h2>
+
+  <article class="topic-section">
+    <h3>Formal Verification</h3>
+    <p>
+      Traditional software testing can demonstrate the presence of bugs but can never guarantee their absence. Our research moves beyond heuristic debugging to establish <strong>mathematical proofs of correctness</strong>, ensuring that a system strictly satisfies its critical safety properties.
+    </p>
+    <!-- <p> -->
+    <!--   This rigorous approach eliminates the "subtle gaps" in design and implementation that often lead to catastrophic failures—ranging from simple integer overflows <a href="https://jam.dev/blog/famous-bugs-rocket-launch/">(Ariane 5)</a> to complex concurrency issues like priority inversion <a href="https://kwahome.medium.com/the-first-bug-on-mars-os-scheduling-priority-inversion-and-the-mars-pathfinder-53586a631525">(Mars Rover)</a>. -->
+    <!-- </p> -->
+    <p>
+      We view verification not as a secondary check, but as the architectural bedrock of systems. We envision a principled development cycle where safe design and rigorous formal proofs evolve in tandem.
+    </p>
+  </article>
+
+  <article class="topic-section">
+    <h3>Mechanized Proofs</h3>
+
+    <div class="wrap-image">
+      <img src="/assets/img/research_figs/coq.PNG" alt="Coq" style="width:100%;">
+      <p style="font-size: 0.8em; color: #666; margin-top: 5px; text-align: center;">
+	<em></em>
+      </p>
+    </div>
+
+    <p> Mathematical reasoning can be represented as precise, machine-executable mechanisms. Proof Assistants are the computational frameworks that realize this concept as a computer program.
+    </p>
+
+    <p> In this paradigm, <strong>a proof is a structured program</strong>, where the proof-checking process is as objective and definitive as a compiler checking a program’s type. Our goal is to tame the complexity of formalization so that the verification of large-scale systems becomes both feasible and scalable through <em>Proof Engineering.</em>
+    </p>
+
+  </article>
+</section>
+
+<hr>
+
+<section id="research-topics">
+  <h2 class="archive__subtitle">Research Topics</h2>
+
+  <article class="topic-section">
+    <h3>[Topic 1] Foundational Study on Real-Time System Formal Verification</h3>
+
+    <p>
+      Computer systems have become an inseparable part of our lives, yet we continue to witness catastrophic failures caused by software flaws. As these systems increasingly integrate AI, the unpredictability of software behavior has reached a critical turning point.
+    </p>
+
+    <div class="image-row">
+      <img src="/assets/img/research_figs/flaws.PNG" alt="Coq" style="width:45%;">
+      <img src="/assets/img/research_figs/VeriRT.PNG" alt="Coq" style="width:45%;">
+    </div>
+
+    <p>
+      Modern safety-critical systems are inherently <strong>distributed and real-time</strong>, which introduces immense complexity to system execution. This complexity creates a massive hurdle for both safe design and rigorous verification, as timing and synchronization errors can lead to fatal consequences.
+    </p>
+
+
+    <p>Our research addresses these fundamental challenges. Through our work, we have established:</p>
+    <ul>
+      <li><strong>Faithful Timed Semantics:</strong> A methodology to extend standard programming language semantics into rigorous, timed representations that reflect actual system execution.</li>
+      <li><strong>General Verification Principles:</strong> A foundational framework providing the reasoning power necessary to verify complex real-time properties at scale.</li>
+    </ul>
+    <p>
+      Building on these theoretical foundations, we are expanding our reach toward practical, large-scale platforms such as ROS 2. Our goal is to bridge the gap between formal theory and industrial practice, ensuring that the next generation of robotic and autonomous systems is built upon a <strong>provably secure and predictable architecture</strong>.
+    </p>
+  </article>
+
+  <article class="topic-section">
+    <h3>[Topic 2] Formal Verification of Complex Computer Systems</h3>
+    <p>
+      In modern computing infrastructures, even a single subtle flaw in the underlying layer can compromise the entire software stack. We focus on securing these foundational layers through rigorous formal verification:
+    </p>
+
+    <ul>
+      <li><strong>Compiler Verification:</strong> Compilers are the bedrock of software development, yet they are notoriously prone to bugs that can remain hidden for years. Since a single compiler error can silently introduce vulnerabilities, verifying the translation process is paramount. We apply formal methods to ensure that the executable code remains perfectly faithful to its source.</li>
+
+      <div class="image-row">
+	<img src="/assets/img/research_figs/compbugs.PNG" alt="Compiler Verification">
+	<img src="/assets/img/research_figs/crellvm_ex.PNG" alt="CreLLVM Example">
+      </div>
+
+      <li><strong>Consensus Protocol Verification:</strong> Consensus protocols are the core mechanisms for maintaining data integrity in distributed systems—a critical technology in blockchain and financial networks, but not limited to them. We utilize principled formal methods to prove the <em>safety and liveness</em> of these algorithms, ensuring that distributed trust remains inviolable.</li>
+
+      <div class="image-row">
+	<img src="/assets/img/research_figs/flexcon.PNG" alt="Flexible Consensus">
+	<img src="/assets/img/research_figs/lado.PNG" alt="LADO">
+      </div>
+
+    </ul>
+  </article>
+
+  <article class="topic-section">
+    <h3>[Topic 3] AI meets Formal Verification</h3>
+    <p>
+      The rapid integration of AI into safety-critical systems presents both a formidable challenge and a transformative opportunity for formal verification. Our research explores this dual relationship:
+    </p>
+
+    <div class="image-row">
+      <img src="/assets/img/research_figs/ai_simplex.png" alt="Flexible Consensus">
+      <img src="/assets/img/research_figs/ai_proofgen.png" alt="LADO">
+    </div>
+
+    <ul>
+      <li><strong>Formal Verification for AI:</strong>
+	Traditional verification analyzes human-written logic, but AI components often operate as "black boxes," making their behavior unpredictable. This lack of transparency poses a new challenge to safety guarantees. To address this, we explore architectural safeguards like Simplex Architecture to provide runtime assurance. Our goal is to develop robust frameworks that bound the uncertainty of AI controllers, ensuring autonomous systems remain within safe operational limits.</li>
+      <li><strong>AI for Formal Verification:</strong>
+	While mechanized proof provides absolute certainty, the human effort required for formalization is a major bottleneck. We investigate using AI to automate proof generation and assist in constructing complex formal arguments. As autonomous proving is in its infancy, we focus on foundational techniques to bridge this gap—such as narrowing problem domains or providing structured guidance to AI models.</li>
+    </ul>
+  </article>
+</section>

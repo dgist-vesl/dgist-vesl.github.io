@@ -1,0 +1,21 @@
+---
+title: Publications
+layout: single
+author_profile: false
+---
+
+<ul>
+  {% for paper in site.data.publist %}
+  <li>
+    <b>
+      {{paper.title}} <span style="color:red">[{{paper.venue}}]</span>
+    </b>
+    <br>
+    {{paper.subtitle}}
+    <br>
+    {% for link in paper.links %}
+    <a href="{{link.url}}">{{ link.name }}</a>
+    {% endfor %}
+  </li>
+  {% endfor %}
+</ul>
