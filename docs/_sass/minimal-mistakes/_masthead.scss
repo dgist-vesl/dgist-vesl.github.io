@@ -4,12 +4,14 @@
 
 .masthead {
   position: relative;
+  background: white;
   border-bottom: 1px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  font-weight: 700;
 
   &__inner-wrap {
     @include clearfix;
@@ -49,6 +51,10 @@
   -ms-flex-item-align: center;
   align-self: center;
   font-weight: bold;
+  font-size: $type-size-7;
+  // font-family: 'Cormorant Garamond', serif;
+  // text-transform: uppercase;
+  -webkit-text-fill-color: $dark-gray;
   // z-index: 20;
 }
 
