@@ -1,13 +1,57 @@
-- title: My Second Paper
-  venue: POPL 2025
-  subtitle: a, b, c, else
+- title: "A Formal Verification Library Design for Behavioral Refinement of CompCert Clight"
+  venue: "IEEE Access, 2025"
+  authors: "Yoonseung Kim"
+  subtitle: "IEEE Access, vol. 13, pp. 26927-26944, 2025"
   links:
-  - name : Official Link
-    url: https://localhost:4000
-  - name : Local Copy
-    url: https://localhost:4000
+    - name: "Official Link"
+      url: https://ieeexplore.ieee.org/document/10876118
 
-- title: My First Paper
-  venue: POPL 2024
-  subtitle: d, e, f, else
+- title: "VeriRT: An End-To-End Verification Framework for Real-Time Distributed Systems"
+  venue: "POPL 2025"
+  authors: "Yoonseung Kim, Sung-Hwan Lee, Yonghyun Kim, Chung-Kil Hur"
+  subtitle: Proceedings of the 52nd ACM SIGPLAN Symposium on Principles of Programming Languages"
   links:
+    - name: "Official Link"
+      url: https://dl.acm.org/doi/10.1145/3704897
+    - name: "Local Copy"
+      url: /assets/pdf/VeriRT_POPL2025.pdf
+
+- title: "LiDO: Linearizable Byzantine Distributed Objects with Refinement-Based Liveness Proofs"
+  venue: "PLDI 2024"
+  authors: "Longfei Qiu, Yoonseung Kim, Ji-Yoon Shin, Jieung Kim, Wolf Honore, and Zhong Shao"
+  subtitle: "Proceedings of the 45th ACM SIGPLAN Conference on Programming Language Design and Implementation"
+  links:
+    - name: "Official Link"
+      url: https://dl.acm.org/doi/10.1145/3656423
+
+- title: "AdoB: Bridging Benign and Byzantine Consensus with Atomic Distributed Objects"
+  venue: "OOPSLA 2024"
+  authors: "Wolf Honore, Longfei Qiu, Yoonseung Kim, Ji-Yong Shin, Jieung Kim, Zhong Shao"
+  subtitle: "Proceedings of 2024 ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications"
+  links:
+    - name: "Official Link"
+      url: https://dl.acm.org/doi/10.1145/3649826
+
+- title: "Crellvm: Verified Credible Compilation for LLVM"
+  venue: "PLDI 2018"
+  authors: "Jeehoon Kang, Yoonseung Kim, Youngju Song, Juneyoung Lee, Sanghoon Park, Mark Dongyeon Shin, Yonghyun Kim, Sungkeun Cho, Joonwon Choi, Chung-Kil Hur, Kwangkeun Yi"
+  subtitle: "Proceedings of the 39th annual ACM SIGPLAN conference on Programming Languages Design and Implementation"
+  links:
+    - name: "Official Link"
+      url: https://dl.acm.org/doi/10.1145/3192366.3192377
+
+- title: "Taming Undefined Behavior in LLVM"
+  venue: "PLDI 2017"
+  authors: "Juneyoung Lee, Yoonseung Kim, Youngju Song, Chung-Kil Hur, Sanjoy Das, David Majnemer, John Regehr, Nuno P. Lopes"
+  subtitle: "Proceedings of the 38th annual ACM SIGPLAN conference on Programming Languages Design and Implementation"
+  links:
+    - name: "Offical Link"
+      url: https://dl.acm.org/doi/10.1145/3062341.3062343
+
+- title: "Lightweight Verification of Separate Compilation"
+  venue: "POPL 2016"
+  authors: "Jeehoon Kang, Yoonseung Kim, Chung-Kil Hur, Derek Dreyer, Viktor Vafeiadis"
+  subtitle: "Proceedings of the 43rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages"
+  links:
+    - name: "Official Link"
+      url: https://dl.acm.org/doi/10.1145/2837614.2837642
